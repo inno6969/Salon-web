@@ -1,0 +1,54 @@
+.back-button:hover {
+    background-color: #333;
+}
+
+.back-button {
+    position: static;
+    top: 10px;
+    right: 10px;
+    background-color: #fff9f9;
+    color: #d0bcda;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+.back-to-top{
+    z-index: 1;
+}
+.header{
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #e3c5e4;
+}
+
+.x {
+    width: 100vw;
+    height: 110%;
+    z-index: -1;
+}
+
+
+footer {
+    background-color: #333;
+    color: #d0bcda;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
