@@ -1,7 +1,7 @@
 *
  body {
      font-family: Arial, sans-serif;
-     background-color: #e4e1e1;
+     background-color: #e3cde6;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -22,14 +22,14 @@
     background-image: url("picture/Blissful beauty SALON(bckG2).png");
         background-size: cover;
         background-position: center;
-     background-color:#e4e1e1;;
+     background-color: #e65fda;
      padding: 20px;
      border-radius: 10px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      width: 300px;
      text-align: center;
-     background-color: #2d4125;
-     color:#2d4125 ;
+     background-color: #e4e1e1;
+     color:#000000 ;
  }
 
  .welcome-container h2 {
