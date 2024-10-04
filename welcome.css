@@ -1,68 +1,70 @@
-  body {
-            font-family: Arial, sans-serif;
-            background-color: #e3cde6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+*
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #e3cde6;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
 
-        h2 {
-            color: #f15fcd;
-            border-bottom: 2px solid #333;
-            display: inline-table;
-            padding-bottom: 5px;
-        }
+ h2 {
+     color: #f15fcd;
+     border-bottom: 2px solid #333;
+     display: inline-table;
+     padding-bottom: 5px;
+ }
 
-        .welcome-container {
-            background-image: url("picture/Blissful beauty SALON(bckG2).png");
-            background-size: cover;
-            background-position: center;
-            background-color: #e65fda;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 90%; /* Use percentage for responsiveness */
-            max-width: 300px; /* Keep a maximum width */
-            text-align: center;
-            color: #000000;
-        }
+ 
 
-        .welcome-container h2 {
-            margin-bottom: 20px;
-        }
+ .welcome-container {
+    background-image: url("picture/Blissful beauty SALON(bckG2).png");
+        background-size: cover;
+        background-position: center;
+     background-color: #e65fda;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 300px;
+     text-align: center;
+     background-color: #e4e1e1;
+     color:#000000 ;
+ }
 
-        .welcome-container p {
-            font-size: large;
-            margin: 10px 0;
-        }
+ .welcome-container h2 {
+     margin-bottom: 20px;
+ }
 
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px; /* Space between buttons */
-            margin-top: 20px;
-        }
+ .welcome-container p {
+    font: large;
+     margin: 10px 0;
+ }
 
-        .button-container a,
-        .button-container button {
-            width: 100%; /* Set width to 100% of the parent container */
-            height: 50px; /* Set a fixed height */
-            padding: 15px; /* Optional: adjust padding if needed */
-            background-color: #f15fcd;
-            border: none;
-            border-radius: 2px;
-            color: #fff;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-        }
+ .button-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     margin-top: 20px;
+ }
 
-        .button-container button:hover,
-        .button-container a:hover {
-            background-color: #333;
-        }
-    </style>
+ .button-container a,
+ .button-container button {
+     width: 50%;
+     padding: 15px 30px;
+     background-color: #f15fcd;
+     border: none;
+     border-radius: 2px;
+     color: #fff;
+     font-size: 16px;
+     cursor: pointer;
+     text-decoration: none;
+     text-align: center;
+     margin-top: 20px;
+ }
+
+ .button-container button:hover,
+ .button-container a:hover {
+     background-color: #333;
+ }
