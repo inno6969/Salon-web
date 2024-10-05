@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Send a Gift Card - Blissful Beauty Salon</title>
     <link rel="stylesheet" href="giftcard.css">
+    <script>giftcard.js</script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 
     <div class="giftcard-container">
         <h2>Send a Gift Card</h2>
-        <form id="giftcard-form" action="submit_giftcard.php" method="post">
+        <form id="giftcard-form" action="submit_giftcard.php" method="get">
             <div class="form-group">
                 <label for="amount">Gift Card Amount</label>
                 <select id="amount" name="amount" required>
