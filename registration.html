@@ -10,12 +10,10 @@
 
 <body>
     <div class="registration-container">
-        <h2>Member Registration</h2>
+        <h2>Create an Account</h2>
         <form id="registration-form" action="index.html" method="post">
-            <input type="text" name="first_name" placeholder="First Name" required>
-            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="text" name="first_name" placeholder=" Please Enter full Names" required>
             <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="address" placeholder="Address" required>
             <input type="tel" name="phone" placeholder="Phone Number" required>
             <input type="date" name="dob" placeholder="Date of Birth" required>
             <div class="form-group">
@@ -33,7 +31,7 @@
             <input type="password" name="confirm_password" placeholder="Confirm Password"required>
             <input type="submit" value="Register">
         </form>
-        <button class="home-button" onclick="location.href='index.html'">Log in</button>
+        <button class="home-button" onclick="location.href='index.html'">Back</button>
         <div class="success-message" id="success-message">Registration successful!</div>
     </div>
     <script>
