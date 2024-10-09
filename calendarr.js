@@ -20,7 +20,7 @@ const daysInMonth = (month, year) => new Date(year, month, 0).getDate();
 
                 dayElement.addEventListener('click', () => {
                     if (dayElement.classList.contains('available')) {
-                        alert(`You have selected ${day}/${month}/${year}`);
+                        alert(`Slot available ${day}/${month}/${year}`);
                     } else {
                         alert('This slot is already booked.');
                     }
