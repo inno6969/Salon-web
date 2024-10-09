@@ -19,7 +19,7 @@
  
 
  .welcome-container {
-   background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
+background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
         background-size: cover;
         background-position: center;
      background-color: #e65fda;
@@ -51,17 +51,15 @@
 
  .button-container a,
  .button-container button {
-     width: 50%;
-     padding: 15px 30px;
-     background-color: #f15fcd;
-     border: none;
-     border-radius: 2px;
-     color: #fff;
-     font-size: 16px;
-     cursor: pointer;
-     text-decoration: none;
-     text-align: center;
-     margin-top: 20px;
+    background-color: #f15fcd;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
  }
 
  .button-container button:hover,
