@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color:#e3cde6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ body {
 }
 
 h2 {
-    color: #f15fcd;
+    color: #3a0a2d;
     margin-bottom: 20px;
 }
 
@@ -28,6 +28,8 @@ input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
+    display: grid;
+    place-items: center;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
