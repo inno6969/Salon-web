@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Send a Gift Card - Blissful Beauty Salon</title>
     <link rel="stylesheet" href="giftcard.css">
-    
 </head>
 
 <body>
@@ -25,7 +24,7 @@
 
     <div class="giftcard-container">
         <h2>Send a Gift Card</h2>
-        <form id="giftcard-form" action="submit_giftcard.php" method="get">
+        <form id="giftcard-form" action="submit_giftcard.php" method="post">
             <div class="form-group">
                 <label for="amount">Gift Card Amount</label>
                 <select id="amount" name="amount" required>
@@ -81,14 +80,12 @@
             </div>
             <button type="submit" class="submit-button">Send Gift Card</button>
         </form>
-        <div class="success-message" id="success-message">Gift card sent successfully!</div>
+    
         <button class="back-button" onclick="window.location.href='servicesoffred.html'">Services</button>
     </div>
 
     
-    <button id="back-to-top" title="Go to top">Top</button>
+    
 </html>
-    <script src="gitfcard.js"></script>
-</body>
 
 </html>
