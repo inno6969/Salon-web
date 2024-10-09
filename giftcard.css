@@ -33,12 +33,12 @@ nav ul li a {
 }
 
 .giftcard-container {
-    background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
+    background-image: url("picture/Blissful beauty SALON(bckG2).png");
         background-position: center;
         background-size: cover;
     max-width: 600px;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
@@ -73,7 +73,7 @@ select {
 }
 
 .submit-button {
-    background-color: #d0bcda;
+    background-color:#f15fcd;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -90,18 +90,16 @@ select {
 }
 
 .back-button {
-    background-color: #d0bcda;
+    background-color:#f15fcd;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;
     display: block;
-    text-align: center;
-    width: 200px;
-    margin: 20px auto 0;
+    width: 100%;
 }
 
 .back-button:hover {
