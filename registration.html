@@ -6,45 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salon Member Registration</title>
     <link rel="stylesheet" href="registration.css">
+    <script type="module" src="registration.js" defer></script>
 </head>
 
 <body>
     <div class="registration-container">
         <h2>Create an Account</h2>
         <form id="registration-form" action="index.html" method="post">
-            <input type="text" name="first_name" placeholder=" Please Enter Your Full Names" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-            <input type="date" name="dob" placeholder="Date of Birth" required>
-            <div class="form-group">
-                <label>Gender</label>
-                <div>
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Male</label>
-                </div>
-                <div>
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Female</label>
-                </div>
-            </div>
-            <input type="password" name="password" placeholder="Password"  required>
-            <input type="password" name="confirm_password" placeholder="Confirm Password"required>
-            <input type="submit" value="Register">
+            <input type="text" name="first_name" id="first_name" placeholder=" Fullname" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+            <input type="password" name="password" id="password" placeholder="Password"  required>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password"required>
+            <input type="submit" id="submit" value="Register">
         </form>
         <button class="home-button" onclick="location.href='index.html'">Back</button>
         <div class="success-message" id="success-message">Registration successful!</div>
     </div>
-    <script>
-        document.getElementById('registration-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                // Simulate successful form submission (replace with actual submission logic)
-                setTimeout(function () {
-                    document.getElementById('success-message').style.display = 'block';
-                }, 1000);
-            });
-
-    </script>
 </body>
 
 </html>
