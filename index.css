@@ -1,66 +1,135 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:#e3cde6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
 }
 
-.login-container {
-background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
-    background-color: #e4e1e1;
-    padding: 30px;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+    position: relative;
+    height: 65vh; /* Full height for the slideshow */
+    overflow: hidden;
+}
+
+.slide {
+    display: none; /* Hide all slides by default */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    z-index: -1;
+}
+
+.hero {
+    background-image: url('/picture/Blissful\ beauty\ SALON\(bckG2\).png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0); /* Change text color for better visibility */
+    text-align: center;
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d0bcda;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
 }
 
 h2 {
-    color: #3a0a2d;
-    margin-bottom: 20px;
+    margin-top: 0;
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
+.stats div {
     margin: 10px 0;
-    display: grid;
-    place-items: center;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
-input[type="submit"] {
-    background-color: #f15fcd;
-    color: #fff;
-    padding: 10px;
+button {
+    background-color: #ff69b4;
     border: none;
-    border-radius: 4px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
     cursor: pointer;
-    width: 100%;
 }
 
-input[type="submit"]:hover {
+button:hover {
+    background-color: #ff1493;
+}
+
+.logo img {
+    height: 60px; /* Adjust the height as needed */
+}
+
+footer {
     background-color: #333;
-}
-
-a {
-    display: block;
-    margin-top: 10px;
-    color: #ff6b6b;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.error {
-    color: rgb(255, 0, 0);
-    margin-top: 10px;
-    font-size: 0.9em;
+    color: #d0bcda;
+    text-align: center;
+    padding: 10px 0;
 }
