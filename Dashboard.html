@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="welcome.css">
-    <title>Welcome to the Salon</title>
+    <title>Blissful Beauty Salon</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <!--Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script type="module" src="/scripts/index.js" defer></script>
 </head>
+
 <body>
-    <div class="welcome-container">
-        <h2>Welcome to Blissful Beauty Salon</h2>
-        <p>Thank you for logging in!</p>
-        <p>We are delighted to see you!</p>
-        <p>Book your next appointment and check out our latest offers with ease.</p>
-        <p>The Blissful Beauty Salon Team is excited to have you with us!</p>
 
-        <div class="button-container">
-            <a href="services.html" class="explore-button">Explore Services</a>
-            <button onclick="location.href='Dashboard.html'" class="sign-out-button">Home</button>
-        </div>
-
-        <div class="latest-offers">
-            <h3>Latest Offers</h3>
-            <ul>
-                <li>40% off on your first service!</li>
-                <li>Refer a friend and get a free treatment!</li>
-                <li>Seasonal discounts available!</li>
-            </ul>
-        </div>
+    <div class="login-container">
+        <h2><strong>Blissful Beauty Salon</strong></h2>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Email" required aria-label="Email">
+            <input type="password" id="password" placeholder="Password" required aria-label="Password">
+            <input type="submit" value="Sign in">
+            <a href="registration.html">Sign up?</a>
+            <a href="forgotpassword.html">Forgotten password?</a>
+            <a href = "Dashboard.html">Home
+        </form>
     </div>
+
 </body>
 </html>
