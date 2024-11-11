@@ -29,7 +29,7 @@ body {
 }
 
 .registration-container {
-    background-image: url('/picture/Blissful\ beauty\ SALON\(bckG2\).png');
+    background-image: url('background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");');
     max-width: 400px;
     margin: 100px auto;
     padding: 30px;
