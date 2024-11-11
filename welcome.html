@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="/styles/welcome.css">
     <title>Welcome to the Salon</title>
 </head>
-
 <body>
-
     <div class="welcome-container">
-        <h2>Blissful Beauty Salon</h2>
-        <p>Thank you for logging in.</p>
+        <h2>Welcome to Blissful Beauty Salon</h2>
+        <p>Thank you for logging in!</p>
         <p>We are delighted to see you!</p>
         <p>Book your next appointment and check out our latest offers with ease.</p>
-        <p>Thank you for choosing Blissful Beauty Salon!</p>
         <p>The Blissful Beauty Salon Team is excited to have you with us!</p>
 
         <div class="button-container">
-            <a href="services.html">Explore</a>
-        
-            <button onclick="location.href='index.html'">Back</button>
-            
+            <a href="services.html" class="explore-button">Explore Services</a>
+            <button onclick="location.href='Dashboard.html'" class="sign-out-button">Home</button>
+        </div>
+
+        <div class="latest-offers">
+            <h3>Latest Offers</h3>
+            <ul>
+                <li>40% off on your first service!</li>
+                <li>Refer a friend and get a free treatment!</li>
+                <li>Seasonal discounts available!</li>
+            </ul>
         </div>
     </div>
-
 </body>
-
 </html>
