@@ -5,6 +5,63 @@ body {
     background-color: #e3cde6;
 }
 
+
+/* Base styles for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Wrap items if needed */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d0bcda;
+}
+
+/* Adjust logo size and navigation on smaller screens */
+.logo img {
+    height: 50px; /* Adjust height for smaller screens */
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        padding: 15px;
+        text-align: center;
+    }
+
+    .user-profile {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add vertical spacing between nav items */
+    }
+}
+
+
 header {
     background-color: #333;
     color: #fff;
