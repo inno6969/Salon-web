@@ -7,7 +7,7 @@ body {
 }
 
 .slideshow-container {
-    background-image: url('/picture/Facial.png');
+    background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
     position: absolute;
     top: 0;
     left: 0;
