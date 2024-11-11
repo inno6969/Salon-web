@@ -1,68 +1,82 @@
-*
- body {
-     font-family: Arial, sans-serif;
-     background-color: #e3cde6;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     margin: 0;
- }
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('/picture/Blissful\ beauty\ SALON\(bckG2\).png'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
 
- h2 {
-     color: #f15fcd;
-     border-bottom: 2px solid #333;
-     display: inline-table;
-     padding-bottom: 5px;
- }
+.welcome-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
 
- 
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
 
- .welcome-container {
-background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
-        background-size: cover;
-        background-position: center;
-     background-color: #e65fda;
-     padding: 20px;
-     border-radius: 10px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-     width: 300px;
-     text-align: center;
-     background-color: #e4e1e1;
-     color:#000000 ;
- }
+p {
+    margin: 10px 0;
+}
 
- .welcome-container h2 {
-     margin-bottom: 20px;
- }
-
- .welcome-container p {
-    font: large;
-     margin: 10px 0;
- }
-
- .button-container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 10px;
-     margin-top: 20px;
- }
-
- .button-container a,
- .button-container button {
-    background-color: #f15fcd;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.button-container {
     margin-top: 20px;
-    width: 100%;
- }
+}
 
- .button-container button:hover,
- .button-container a:hover {
-     background-color: #333;
- }
+.explore-button, .sign-out-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.explore-button {
+    background-color: #ff6f61; /* Customize button color */
+    color: white;
+    text-decoration: none;
+}
+
+.explore-button:hover {
+    background-color: #ff4f3a; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+.sign-out-button {
+    background-color: #c0392b; /* Sign out button color */
+    color: white;
+}
+
+.sign-out-button:hover {
+    background-color: #a93226; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+.latest-offers {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for offers */
+    border-radius: 5px;
+}
+
+.latest-offers h3 {
+    margin-bottom: 10px;
+}
+
+.latest-offers ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.latest-offers li {
+    margin: 5px 0;
+}
