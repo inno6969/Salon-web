@@ -17,5 +17,5 @@ document.getElementById('payment-form').addEventListener('submit', function(even
     // Redirect to the receipt page after a short delay
     setTimeout(function() {
         window.location.href = 'receipt.html';
-    }, 3000); // Redirect after 3 seconds
+    }, 4000); // Redirect after 3 seconds
 });
