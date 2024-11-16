@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receipt - Glamour Salon</title>
-    <style>
-        /* Your CSS styles */
-    </style>
+    <title>Receipt - Blissful Beauty Salon</title>
+    <link rel="stylesheet" href="receipt.css">
 </head>
 
 <body>
@@ -20,32 +18,16 @@
             <p><strong>Service:</strong> <span id="receipt-service"></span></p>
             <p><strong>Date:</strong> <span id="receipt-date"></span></p>
             <p><strong>Time:</strong> <span id="receipt-time"></span></p>
-            <p><strong>Card Number:</strong> <span id="receipt-card"></span></p>
+            <p><strong>Message:</strong> <span id="receipt-message"></span></p>
+            <p><strong>Account Number:</strong> <span id="receipt-account"></span></p>
+            <p><strong>Expiry Date:</strong> <span id="receipt-expiry"></span></p>
+            <p><strong>CVV:</strong> <span id="receipt-cvv"></span></p>
         </div>
         <button class="print-button" onclick="window.print()">Print Receipt</button>
         <br>
-        <button class="back-button" onclick="window.location.href='servicesoffred.html'">Back to Services</button>
+        <button class="back-button" onclick="window.location.href='services.html'">Home</button>
     </div>
-
-    <script>
-        const bookingDetails = {
-            name: localStorage.getItem('name'),
-            email: localStorage.getItem('email'),
-            phone: localStorage.getItem('phone'),
-            service: localStorage.getItem('service'),
-            date: localStorage.getItem('date'),
-            time: localStorage.getItem('time'),
-            card: localStorage.getItem('card')
-        };
-
-        document.getElementById('receipt-name').textContent = bookingDetails.name;
-        document.getElementById('receipt-email').textContent = bookingDetails.email;
-        document.getElementById('receipt-phone').textContent = bookingDetails.phone;
-        document.getElementById('receipt-service').textContent = bookingDetails.service;
-        document.getElementById('receipt-date').textContent = bookingDetails.date;
-        document.getElementById('receipt-time').textContent = bookingDetails.time;
-        document.getElementById('receipt-card').textContent = '**** **** **** ' + bookingDetails.card.slice(-4);
-    </script>
+    <script src="receipt.js"></script>
 </body>
 
 </html>
