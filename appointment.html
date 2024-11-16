@@ -1,8 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book an Appointment - Blisful Beauty Salon</title>
+    <title>Book an Appointment - Blissful Beauty Salon</title>
     <link rel="stylesheet" href="appointments.css">
+    <script type="module" src="appointments.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -13,34 +18,29 @@
                 <li><a href="services.html">Home</a></li>
                 <li><a href="servicesoffred.html">Services</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="terms.html">Terms & Conditions</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="giftcard.html">Gift Cards</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="booking-form">
         <h2>Appointment Details</h2>
-        <form action="paymentM.html" method="get">
+        <form id="appointment-form">
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" >
-                <br>
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" >
-                <br>
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" >
-                <br>
+                <input type="tel" id="phone" name="phone" required>
             </div>
             <div class="form-group">
                 <label for="service">Select Service</label>
-                <select id="service" name="service" >
+                <select id="service" name="service" required>
                     <option value="">Select a service</option>
                     <option value="haircut">Haircut</option>
                     <option value="coloring">Hair Coloring</option>
@@ -48,16 +48,14 @@
                     <option value="facial">Facial</option>
                     <option value="massage">Massage</option>
                 </select>
-                <br>
             </div>
             <div class="form-group">
                 <label for="date">Preferred Date</label>
-                <input type="date" id="date" name="date" >
+                <input type="date" id="date" name="date" required>
             </div>
-            <br>
             <div class="form-group">
                 <label for="time">Preferred Time</label>
-                <input type="time" id="time" name="time" >
+                <input type="time" id="time" name="time" required>
             </div>
             <div class="form-group">
                 <label for="message">Additional Message (optional)</label>
@@ -67,6 +65,31 @@
         </form>
     </section>
 
-</body>
+    <script>
+        document.getElementById('appointment-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
 
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const message = document.getElementById('message').value;
+
+            // Store in local storage
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+            localStorage.setItem('phone', phone);
+            localStorage.setItem('service', service);
+            localStorage.setItem('date', date);
+            localStorage.setItem('time', time);
+            localStorage.setItem('message', message);
+
+            // Redirect to the payment page
+            window.location.href = 'paymentM.html';
+        });
+    </script>
+</body>
 </html>
