@@ -1,29 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
+    background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e3cde6;
-    background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
-    background-size: cover;
-    background-position: center;
-    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333; 
+    color:#fff;
+    padding: 20px 0;
     text-align: center;
 }
 
-
+/*naaaaaaaaaaaaaaaaaaav*/
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    position: relative;
+    padding: 20px;
+    background-color: #333; /* Background color for the header */
+    text-align: left; /* Align text to the left */
 }
 
+.line {
+    position: absolute;
+    top: 10px; /* Adjust based on your needs */
+    left: 10px; /* Adjust based on your needs */
+    width: 30px; /* Width of the lines */
+    height: 4px; /* Height of the lines */
+    background-color: #333; /* Color of the lines */
+}
 
-header h1 {
-    margin: 0;
+.line:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.line:nth-child(2) {
+    transform: rotate(45deg);
+    top: 18px; /* Adjust for spacing */
+}
+
+.line:nth-child(3) {
+    transform: rotate(90deg);
+    top: 26px; /* Adjust for spacing */
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0; /* Margin to separate from lines */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Color of the links */
+}
+
+
+nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
@@ -33,46 +73,65 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: rgb(160, 44, 112);
     text-decoration: none;
 }
 
 section {
+    background-image: url('/picture/Blissful\ beauty\ SALON\(bckG2\).png');
     padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    display: inline-table;
-    padding-bottom: 5px;
+    color: #333; /* Section heading color */
 }
 
-.Our-Services {
-    background-color: #f15fcd;
+button.our-services {
+    background-color: #d0bcda;
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
-.Our-Services:hover {
-    background-color: #333;
+button.our-services:hover {
+    background-color: #ff4f3a;
 }
 
-.footer {
-    background-color: #333;
-    color: #f15fcd;
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 30%;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #ff6f61;
+}
+
+footer {
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    background-color: #333;
+    color: #d0bcda;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
