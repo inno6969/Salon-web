@@ -1,47 +1,66 @@
-/* General Styles */
-body {
+/* General Reset */
+* {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    display:flex;
-    justify-content: space-between;
-    background-color: #333; 
-    color:#fff;
-    padding: 10px 20px;
+/* Body Styling */
+body {
+    background-color: #f5f5f5;
+    color: #333;
     text-align: center;
 }
 
-header .logo img {
-    width: 120px;
+/* 1️⃣ Header - Full Width & Responsive */
+header {
+    width: 100%;
+    min-height: 60px;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
 }
 
+/* Logo */
+.logo img {
+    height: 50px;
+    max-width: 100%;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 15px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline-block;
 }
 
-nav ul li a {
-    color: rgb(160, 44, 112);
-    text-decoration: none;
+/* Header Buttons */
+nav ul li button {
+    background: #f8b400;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
     font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-/* Slideshow */
+nav ul li button:hover {
+    background: #d99900;
+}
+
+/* 2️⃣ Slideshow */
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    margin: auto;
-    overflow: hidden;
+    margin: 20px auto;
 }
 
 .slide {
@@ -52,187 +71,196 @@ nav ul li a {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-/* About App Section Styling */
-.about-app {
-    background-color: #f8f8f8;
+/* 3️⃣ Hero Section */
+.hero {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.cta-button {
+    background: #ff5722;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #e64a19;
+}
+
+/* 4️⃣ Services Section */
+.services {
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* 5️⃣ Promotions Section */
+.promotions {
+    padding: 50px 20px;
+    background: #ffeb3b;
+}
+
+.promo-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* 6️⃣ Testimonials */
+.testimonials {
+    padding: 50px 20px;
+    background: #f1f1f1;
+}
+
+.testimonials blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #555;
+}
+
+/* 7️⃣ About Section */
+.about-app {
+    padding: 50px 20px;
+    background: #fff;
 }
 
 .about-app h2 {
-    color: #333;
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-.about-app p {
-    color:#333;
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Footer Section - About Creator Styling */
-.footer-section.about-creator {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.footer-section.about-creator p {
-    font-size: 16px;
-    color:chocolate;
-    font-style: italic;
-}
-
-
-/* General Button Styling */
-button {
-    background-color: #ff6f61; /* Main color */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff4c3b; /* Darker shade on hover */
-}
-
-/* Header navigation button style */
-header nav ul li button {
-    background: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header nav ul li button:hover {
-    background-color: #ff6f61;
-    color: white;
-}
-
-/* Footer button style */
-footer .footer-section ul li button {
-    background: none;
-    color:chocolate;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-footer .footer-section ul li button:hover {
-    color: #ff6f61;
-}
-
-
-/* Hero Section */
-.hero {
-    background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
-    text-align: center;
-    background: #264653;
+/* 8️⃣ Footer */
+footer {
+    background: #222;
     color: white;
     padding: 40px 20px;
+    text-align: center;
 }
 
-.hero button {
-    background-color: vio;
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li button {
+    background: transparent;
     color: white;
-    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 
-.hero button:hover {
-    background: #f4a261;
+.footer-section ul li button:hover {
+    text-decoration: underline;
 }
 
-/* Services & Promotions */
-.services, .promotions, .testimonials {
-    padding: 20px;
-    text-align: center;
-}
-
-.services ul {
-    list-style: none;
-    padding: 0;
-}
-
-.services ul li {
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem 1rem;
-    text-align: center;
-    }
-    
-    .footer-container {
+.social-icons {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-    }
-    
-    .footer-section {
-    flex: 1;
-    min-width: 250px;
-    }
-    
-    .footer-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    }
-    
-    .footer-section ul {
-    list-style: none;
-    padding: 0;
-    }
-    
-    .footer-section ul li {
-    margin: 0.5rem 0;
-    }
-    
-    .footer-section ul li a {
-    color: #fff;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: white;
     text-decoration: none;
-    }
-    
-    .footer-section ul li a:hover {
+    font-size: 1rem;
+}
+
+.social-icon:hover {
     text-decoration: underline;
+}
+
+/* 9️⃣ Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
     }
-    
-    .social-icons a {
-    display: inline-block;
-    margin: 0.5rem;
-    color: #fff;
-    text-decoration: none;
+
+    .logo img {
+        height: 40px;
     }
-    
-    .social-icons a:hover {
-    color:#f15fcd;
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
-    
-    footer a {
-    color: chocolate;
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    footer a:hover {
-    text-decoration: underline;
+
+    .slide img {
+        height: 300px;
     }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
