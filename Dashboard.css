@@ -1,112 +1,238 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
-* {
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: #333; 
+    color:#fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #0d0d0d;
+nav ul li {
+    margin: 0 15px;
 }
 
-.login-container {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+nav ul li a {
+    color: rgb(160, 44, 112);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.login-box {
-    display: flex;
-    width: 500px;
-    height: 300px;
-    background: linear-gradient(135deg, #1d0e1a, #f15fcd);
-    border-radius: 15px;
-    box-shadow: 0 0 15px#f15fcd(212, 0, 255, 0.5);
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
     overflow: hidden;
 }
 
-.login-left {
-    width: 60%;
-    background-color: #111;
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* About App Section Styling */
+.about-app {
+    background-color: #f8f8f8;
     padding: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 20px 0;
+    border-radius: 8px;
 }
 
-.login-left h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
+.about-app h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.input-group {
-    margin-bottom: 15px;
+.about-app p {
+    color:#333;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.input-group input {
-    width: 100%;
-    padding: 8px;
-    background: #222;
-    border: 1px solid #444;
-    color: white;
-    border-radius: 5px;
+/* Footer Section - About Creator Styling */
+.footer-section.about-creator {
+    text-align: center;
+    margin-top: 20px;
 }
 
+.footer-section.about-creator p {
+    font-size: 16px;
+    color:chocolate;
+    font-style: italic;
+}
+
+
+/* General Button Styling */
 button {
-    width: 100%;
-    padding: 10px;
-    background: rgb(138, 88, 88);
-    color: white;
+    background-color: #ff6f61; /* Main color */
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background: #f15fcd;
+    background-color: #ff4c3b; /* Darker shade on hover */
 }
 
-.links {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.links a {
-    color:#f15fcd;
-    text-decoration: none;
-}
-
-.login-right {
-    background-image: url('https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(backgroud).png');
-    width: 40%;
-    background: rgba(255, 0, 0, 0.3);
-    padding: 20px;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.login-right h2 {
+/* Header navigation button style */
+header nav ul li button {
+    background: none;
+    color: #fff;
     font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li button:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Footer button style */
+footer .footer-section ul li button {
+    background: none;
+    color:chocolate;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .footer-section ul li button:hover {
+    color: #ff6f61;
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
+    text-align: center;
+    background: #264653;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero button {
+    background-color: vio;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.hero button:hover {
+    background: #f4a261;
+}
+
+/* Services & Promotions */
+.services, .promotions, .testimonials {
+    padding: 20px;
+    text-align: center;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    margin: 10px 0;
     font-weight: bold;
 }
 
-.login-right p {
-    font-size: 12px;
-}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    }
+    
+    .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    }
+    
+    .footer-section {
+    flex: 1;
+    min-width: 250px;
+    }
+    
+    .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    }
+    
+    .footer-section ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .footer-section ul li {
+    margin: 0.5rem 0;
+    }
+    
+    .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    .footer-section ul li a:hover {
+    text-decoration: underline;
+    }
+    
+    .social-icons a {
+    display: inline-block;
+    margin: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    .social-icons a:hover {
+    color:#f15fcd;
+    }
+    
+    footer a {
+    color: chocolate;
+    }
+    
+    footer a:hover {
+    text-decoration: underline;
+    }
