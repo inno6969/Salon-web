@@ -1,27 +1,39 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blissful Beauty Salon</title>
+    <title>Blissful Beauty Salon - Login</title>
     <link rel="stylesheet" href="index.css">
     
-    <!--Firebase SDK -->
+    <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
     <script type="module" src="index.js" defer></script>
 </head>
 
 <body>
-
     <div class="login-container">
-        <h2><strong>Blissful Beauty Salon</strong></h2>
-        <form id="login-form">
-            <input type="email" id="email" placeholder="Email" required aria-label="Email">
-            <input type="password" id="password" placeholder="Password" required aria-label="Password">
-            <input type="submit" value="Sign in">
-            <a href="forgotpassword.html">Forgotten password?</a>
-            <a href = "index.html">Dashboard
-        </form>
+        <div class="login-box">
+            <div class="login-left">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="input-group">
+                        <input type="text" id="email" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <p class="links">Don't have an account? <a href="registration.html">Sign Up</a></p>
+                <p class="links"><a href="forgotpassword.html">Forgot Password?</a></p>
+            </div>
+            <div class="login-right">
+                <h2>WELCOME BACK!</h2>
+                <p>Already a Member? Please Login.</p>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>
