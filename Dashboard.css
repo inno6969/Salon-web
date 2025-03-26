@@ -1,9 +1,10 @@
 /* General Styles */
-body {
+body, html {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #fff;
-    color: #333;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 /* Header */
@@ -11,12 +12,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
-    background: #ff91a4;
+    padding: 15px 30px;
+    background: #b34866;
+    color: white;
 }
 
 .logo img {
-    height: 50px;
+    width: 120px;
 }
 
 nav ul {
@@ -25,24 +27,20 @@ nav ul {
     gap: 15px;
 }
 
-nav ul li button {
-    background: #fff;
+nav button {
+    background: #ff91a4;
+    color: white;
     border: none;
     padding: 10px 15px;
-    cursor: pointer;
     border-radius: 5px;
-    font-weight: bold;
+    cursor: pointer;
 }
 
-nav ul li button:hover {
-    background: #b34866;
-    color: white;
-}
-
-/* Hero Section - Background Slideshow */
+/* Hero Section (Full Screen) */
 .hero {
     position: relative;
-    height: 400px;
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,40 +48,6 @@ nav ul li button:hover {
     overflow: hidden;
 }
 
-.hero-content {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px 40px;
-    border-radius: 15px;
-    position: relative;
-    z-index: 2;
-}
-
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #b34866;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-.btn {
-    display: inline-block;
-    background: #ff91a4;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    margin-top: 15px;
-    font-weight: 600;
-}
-
-.btn:hover {
-    background: #b34866;
-}
-
-/* Slideshow Background */
 .slideshow {
     position: absolute;
     width: 100%;
@@ -94,34 +58,70 @@ nav ul li button:hover {
 }
 
 .slideshow img {
-    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
     opacity: 0;
-    animation: fade 30s infinite;
+    transition: opacity 1s ease-in-out;
 }
 
-.slideshow img:nth-child(1) { animation-delay: 0s; }
-.slideshow img:nth-child(2) { animation-delay: 5s; }
-.slideshow img:nth-child(3) { animation-delay: 10s; }
-.slideshow img:nth-child(4) { animation-delay: 15s; }
-.slideshow img:nth-child(5) { animation-delay: 20s; }
-.slideshow img:nth-child(6) { animation-delay: 25s; }
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 15px;
+    max-width: 90%;
+}
 
-/* Fade Effect */
-@keyframes fade {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    40% { opacity: 1; }
-    60% { opacity: 0; }
-    100% { opacity: 0; }
+.btn {
+    display: inline-block;
+    background: #ff91a4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* Services */
+.services {
+    padding: 50px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Footer */
 footer {
-    background: #ff91a4;
-    text-align: center;
-    padding: 15px;
+    background: #b34866;
     color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
