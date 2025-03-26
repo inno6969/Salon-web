@@ -46,25 +46,29 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
+/* Hero Section - Background Slideshow */
 .hero {
-    background: url('https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/1733640375643.jpg') center/cover no-repeat;
+    position: relative;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .hero-content {
     background: rgba(255, 255, 255, 0.7);
     padding: 20px 40px;
     border-radius: 15px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #b34866; /* Darker pink */
+    color: #b34866;
 }
 
 .hero p {
@@ -85,6 +89,42 @@ nav ul li a:hover {
 .btn:hover {
     background: #b34866;
 }
+
+/* Slideshow Background */
+.slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 30s infinite;
+}
+
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 5s; }
+.slideshow img:nth-child(3) { animation-delay: 10s; }
+.slideshow img:nth-child(4) { animation-delay: 15s; }
+.slideshow img:nth-child(5) { animation-delay: 20s; }
+.slideshow img:nth-child(6) { animation-delay: 25s; }
+
+/* Fade Effect */
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
 
 /* Services */
 .services {
