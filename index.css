@@ -1,112 +1,149 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-* {
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    background-color: #fff0f5; /* Soft pink */
+    color: #333;
+    text-align: center;
 }
 
-body {
+/* Header */
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    background-color: #0d0d0d;
+    padding: 20px 50px;
+    background: #ffdde1; /* Light pink */
 }
 
-.login-container {
-    
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    gap: 15px;
 }
 
-.login-box {
-    display: flex;
-    width: 500px;
-    height: 300px;
-    background: linear-gradient(135deg, #1d0e1a, #f15fcd);
-    border-radius: 15px;
-    box-shadow: 0 0 15px#f15fcd(212, 0, 255, 0.5);
-    overflow: hidden;
+nav ul li {
+    display: inline;
 }
 
-.login-left {
-    width: 60%;
-    background-color: #111;
-    padding: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.login-left h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.input-group {
-    margin-bottom: 15px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 8px;
-    background: #222;
-    border: 1px solid #444;
-    color: white;
-    border-radius: 5px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background: rgb(138, 88, 88);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #5a3d5c; /* Deep pink */
+    padding: 8px 15px;
+    border-radius: 20px;
     transition: 0.3s;
 }
 
-button:hover {
-    background: #f15fcd;
-}
-
-.links {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.links a {
-    color:#f15fcd;
-    text-decoration: none;
-}
-
-.login-right {
-   background-image: url("https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Blissful%20beauty%20SALON(bckG2).png");
-    width: 40%;
-    background: rgba(255, 0, 0, 0.3);
-    padding: 20px;
+nav ul li a:hover {
+    background: #f6a5c0;
     color: white;
-    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/1733640375643.jpg') center/cover no-repeat;
+    height: 400px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-.login-right h2 {
-    font-size: 18px;
+.hero-content {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #b34866; /* Darker pink */
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff91a4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #b34866;
+}
+
+/* Services */
+.services {
+    padding: 50px;
+    background: white;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #b34866;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.service {
+    background: #ffdde1;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.service h3 {
+    font-size: 1.4rem;
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+/* Promotion */
+.promo {
+    padding: 30px;
+    background: #f8d7da;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: #b34866;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #ffdde1;
+    text-decoration: none;
     font-weight: bold;
-}
-
-.login-right p {
-    font-size: 12px;
 }
