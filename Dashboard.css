@@ -1,266 +1,127 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Body Styling */
+/* General Styles */
 body {
-    background-color: #f5f5f5;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
     color: #333;
-    text-align: center;
 }
 
-/* 1️⃣ Header - Full Width & Responsive */
+/* Header */
 header {
-    width: 100%;
-    min-height: 60px;
-    background: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 50px;
+    background: #ff91a4;
 }
 
-/* Logo */
 .logo img {
     height: 50px;
-    max-width: 100%;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
 }
 
-nav ul li {
-    display: inline-block;
-}
-
-/* Header Buttons */
 nav ul li button {
-    background: #f8b400;
+    background: #fff;
     border: none;
-    padding: 8px 12px;
+    padding: 10px 15px;
     cursor: pointer;
-    font-weight: bold;
     border-radius: 5px;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
 nav ul li button:hover {
-    background: #d99900;
+    background: #b34866;
+    color: white;
 }
 
-/* 2️⃣ Slideshow */
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: 20px auto;
-}
-
-.slide {
-    display: none;
-}
-
-.slide img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* 3️⃣ Hero Section */
+/* Hero Section - Background Slideshow */
 .hero {
-    padding: 50px 20px;
-    background: #fff;
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #222;
+    color: #b34866;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-top: 10px;
 }
 
-.cta-button {
-    background: #ff5722;
+.btn {
+    display: inline-block;
+    background: #ff91a4;
     color: white;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.cta-button:hover {
-    background: #e64a19;
-}
-
-/* 4️⃣ Services Section */
-.services {
-    padding: 50px 20px;
-    background: #f9f9f9;
-}
-
-.services h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.service-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.card p {
-    font-size: 1rem;
-    margin-top: 10px;
-}
-
-/* 5️⃣ Promotions Section */
-.promotions {
-    padding: 50px 20px;
-    background: #ffeb3b;
-}
-
-.promo-text {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #444;
-}
-
-/* 6️⃣ Testimonials */
-.testimonials {
-    padding: 50px 20px;
-    background: #f1f1f1;
-}
-
-.testimonials blockquote {
-    font-size: 1.5rem;
-    font-style: italic;
-    color: #555;
-}
-
-/* 7️⃣ About Section */
-.about-app {
-    padding: 50px 20px;
-    background: #fff;
-}
-
-.about-app h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-/* 8️⃣ Footer */
-footer {
-    background: #222;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.footer-section h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li button {
-    background: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.footer-section ul li button:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.social-icon {
-    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
     text-decoration: none;
-    font-size: 1rem;
+    margin-top: 15px;
+    font-weight: 600;
 }
 
-.social-icon:hover {
-    text-decoration: underline;
+.btn:hover {
+    background: #b34866;
 }
 
-/* 9️⃣ Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
+/* Slideshow Background */
+.slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
-    .logo img {
-        height: 40px;
-    }
+.slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 30s infinite;
+}
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 5s; }
+.slideshow img:nth-child(3) { animation-delay: 10s; }
+.slideshow img:nth-child(4) { animation-delay: 15s; }
+.slideshow img:nth-child(5) { animation-delay: 20s; }
+.slideshow img:nth-child(6) { animation-delay: 25s; }
 
-    .service-cards {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Fade Effect */
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
 
-    .slide img {
-        height: 300px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Footer */
+footer {
+    background: #ff91a4;
+    text-align: center;
+    padding: 15px;
+    color: white;
 }
