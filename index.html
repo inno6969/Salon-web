@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Blissful Beauty Salon</title>
+    <title>Blissful Beauty Salon</title>
     <link rel="stylesheet" href="Dashboard.css">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
         <div class="logo">
             <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Beauty.png" alt="Blissful Salon Logo">
         </div>
         <nav>
             <ul>
-                <li><button onclick="location.href='Dashboard.html'">Login</button></li>
+                <li><button onclick="location.href='login.html'">Login</button></li>
+                <li><button onclick="location.href='servicesoffred.html'">Services</button></li
                 <li><button onclick="location.href='giftcard.html'">Gift Card</button></li>
                 <li><button onclick="location.href='specials.html'">Promotions</button></li>
                 <li><button onclick="location.href='careers.html'">Careers</button></li>
@@ -23,31 +24,74 @@
         </nav>
     </header>
 
-    <!-- Hero Section with Background Slideshow -->
+    <!-- Hero Section with Slideshow Background -->
     <section class="hero">
         <div class="slideshow">
-            <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/1733640375643.jpg" alt="Salon Image 1">
-            <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/6b0b60d361234bc88285ee23316b01d9.jpg" alt="Salon Image 2">
-            <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/2a475d9b99cb40409c58fb73864ed7c5.jpg" alt="Salon Image 3">
-            <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/18ff207ccf5c40a983bc2d82e7b89b28.jpg" alt="Salon Image 4">
-            <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/26e18e8e56a540779821f01c48226441.jpg" alt="Salon Image 5">
-            <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/e2166d8fe4c54b4d8529e9c71f80ad50.jpg" alt="Salon Image 6">
+            <img src="image1.jpg" class="slide" alt="Salon Interior">
+            <img src="image2.jpg" class="slide" alt="Hair Styling">
+            <img src="image3.jpg" class="slide" alt="Manicure">
+            <img src="image4.jpg" class="slide" alt="Massage Therapy">
         </div>
         <div class="hero-content">
             <h1>Blissful Beauty Salon</h1>
-            <p>Your Oasis of Beauty & Relaxation</p>
+            <p>Your one-stop destination for relaxation and beauty.</p>
             <a href="registration.html" class="btn">Create a Profile</a>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Haircuts</h3>
+                <p>Expert cuts to refresh your style.</p>
+            </div>
+            <div class="card">
+                <h3>Manicures</h3>
+                <p>Beautiful, lasting nails for every occasion.</p>
+            </div>
+            <div class="card">
+                <h3>Massage Therapy</h3>
+                <p>Relax and rejuvenate with a professional massage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <p>© 2024 Blissful Salon | Created by Theko Mpho</p>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="servicesoffred.html">Login</a></li>
+                    <li><a href="giftcard.html">Gift Card</a></li>
+                    <li><a href="specials.html">Promotions</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61554845873379" target="_blank">Facebook</a>
+                    <a href="https://za.linkedin.com/in/theko-robin-mpho-707b5245" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (078) 0233 123</p>
+                <p>Email: <a href="mailto:thekomphow99@gmail.com">thekomphow99@gmail.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Website Created By</h3>
+                <p>Theko Mpho</p>
+            </div>
         </div>
     </footer>
 
-    <script>
+      <script>
     document.addEventListener("DOMContentLoaded", function() {
     let slides = document.querySelectorAll(".slideshow img");
     let index = 0;
