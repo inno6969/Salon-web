@@ -3,147 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blissful Beauty Salon</title>
+    <title>Welcome to Blissful Salon</title>
     <link rel="stylesheet" href="Dashboard.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
         <div class="logo">
             <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/Beauty.png" alt="Blissful Salon Logo">
         </div>
+        
         <nav>
             <ul>
-                <li><button onclick="location.href='login.html'">Login</button></li>
-                <li><button onclick="location.href='servicesoffred.html'">Services</button></li
-                <li><button onclick="location.href='giftcard.html'">Gift Card</button></li
-                <li><button onclick="location.href='specials.html'">Promotions</button></li>
-                <li><button onclick="location.href='careers.html'">Careers</button></li>
+                <li><a href="Dashboard.html" class="nav-btn">Login</a></li>
+                <li><a href="servicesoffred.html" class="nav-btn">Services</a></li>
+                <li><a href="giftcard.html" class="nav-btn">Gift Card</a></li>
+                <li><a href="specials.html" class="nav-btn">Promotions</a></li>
+                <li><a href="careers.html" class="nav-btn">Careers</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Hero Section with Slideshow Background -->
-    <section class="hero">
-
-         <div class="slideshow-container">
-             <div class="slide fade">
+    
+    <main>
+        <div class="slideshow-container">
+            <div class="slide fade">
                 <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/1733640375643.jpg" alt="Background Image 1">
-                 </div>
-
-             <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/6b0b60d361234bc88285ee23316b01d9.jpg" alt="Background Image 6">
-            </div>
-                 
-            </div>
-             <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/2a475d9b99cb40409c58fb73864ed7c5.jpg" alt="Background Image 1">
             </div>
             <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/18ff207ccf5c40a983bc2d82e7b89b28.jpg" alt="Background Image 1">
-            </div>
-
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/26e18e8e56a540779821f01c48226441.jpg" alt="Background Image 1">
+                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/6b0b60d361234bc88285ee23316b01d9.jpg" alt="Background Image 2">
             </div>
             <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/e2166d8fe4c54b4d8529e9c71f80ad50.jpg" alt="Background Image 1">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/kanale2.jpeg" alt="Background Image 2">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/suliey%20bar2.jpeg" alt="Background Image 3">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/suliey%20bar3.jpeg" alt="Background Image 4">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/suliey%20bar4.jpeg" alt="Background Image 5">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/e4052a9a4ec44fa4b1368ffef4897347.jpg" alt="Background Image 6">
+                <img src="https://raw.githubusercontent.com/inno6969/Salon-web/refs/heads/main/e2166d8fe4c54b4d8529e9c71f80ad50.jpg" alt="Background Image 3">
             </div>
         </div>
 
-
-        
-        <div class="hero-content">
-            <h1>Blissful Beauty Salon</h1>
+        <section class="hero">
+            <h1>Blissful Salon</h1>
             <p>Your one-stop destination for relaxation and beauty.</p>
-            <a href="registration.html" class="btn">Create a Profile</a>
-        </div>
-    </section>
+            <a href="registration.html" class="cta-button">Create a Profile</a>
+        </section>
 
-    <!-- Services Section -->
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Haircuts</h3>
-                <p>Expert cuts to refresh your style.</p>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Haircuts</h3>
+                    <p>Expert cuts to refresh your style.</p>
+                </div>
+                <div class="card">
+                    <h3>Manicures</h3>
+                    <p>Beautiful, lasting nails for every occasion.</p>
+                </div>
+                <div class="card">
+                    <h3>Massage Therapy</h3>
+                    <p>Relax and rejuvenate with a professional massage.</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Manicures</h3>
-                <p>Beautiful, lasting nails for every occasion.</p>
-            </div>
-            <div class="card">
-                <h3>Massage Therapy</h3>
-                <p>Relax and rejuvenate with a professional massage.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    let slides = document.querySelectorAll(".slideshow img");
-    let index = 0;
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <blockquote>"The best salon experience I've ever had!" - Uyinene Kalane.</blockquote>
+        </section>
+    </main>
 
-    function showSlides() {
-        slides.forEach((slide, i) => {
-            slide.style.opacity = i === index ? "1" : "0";
-        });
-
-        index = (index + 1) % slides.length;
-    }
-
-    setInterval(showSlides, 5000); // Change slide every 5 seconds
-});
-
-</script>
-
-    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="servicesoffred.html">Login</a></li>
+                    <li><a href="Dashboard.html">Login</a></li>
+                    <li><a href="servicesoffred.html">Services</a></li>
                     <li><a href="giftcard.html">Gift Card</a></li>
                     <li><a href="specials.html">Promotions</a></li>
                     <li><a href="careers.html">Careers</a></li>
-                    <li><a href="about.html">About Us</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
+
+            <div class="footer-section social-media">
                 <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=61554845873379" target="_blank">Facebook</a>
-                    <a href="https://za.linkedin.com/in/theko-robin-mpho-707b5245" target="_blank">LinkedIn</a>
-                </div>
+                <a href="https://www.facebook.com/profile.php?id=61554845873379" target="_blank">Facebook</a>
+                <a href="https://za.linkedin.com/in/theko-robin-mpho-707b5245" target="_blank">LinkedIn</a>
             </div>
-            <div class="footer-section">
+
+            <div class="footer-section contact-info">
                 <h3>Contact</h3>
                 <p>Phone: (078) 0233 123</p>
                 <p>Email: <a href="mailto:thekomphow99@gmail.com">thekomphow99@gmail.com</a></p>
             </div>
-            <div class="footer-section">
-                <h3>Website Created By</h3>
-                <p>Theko Mpho</p>
-            </div>
         </div>
+        <p class="footer-credit">Web Created by <b>Theko Mpho</b> | © 2024 Blissful Salon</p>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            const slides = document.querySelectorAll(".slide");
+            slides.forEach(slide => slide.style.opacity = "0");
+
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].style.opacity = "1";
+
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
 </body>
 </html>
