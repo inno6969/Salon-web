@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff6b81;
+    background-color: #201315;
     padding: 15px;
     color: white;
 }
@@ -35,7 +35,7 @@ nav ul li {
     text-decoration: none;
     padding: 10px 15px;
     background: white;
-    color: #ff6b81;
+    color: #c43f53;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -67,7 +67,7 @@ nav ul li {
 /* Hero Section */
 .hero {
     padding: 50px 20px;
-    background: linear-gradient(to right, #ff6b81, #ff4757);
+    background: linear-gradient(to right, #3d1f23, #3b2123);
     color: white;
 }
 
